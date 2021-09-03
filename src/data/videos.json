@@ -1,0 +1,49 @@
+[
+  {
+    "day": 1,
+    "text": "Uh oh, only <span>Monday</span> today",
+    "songs": [
+      {
+        "artist": "The Bangles",
+        "song": "Manic Monday",
+        "youtube_id": "SsmVgoXDq2w"
+      },
+      {
+        "artist": "New Order",
+        "song": "Blue Monday",
+        "youtube_id": "LQaehcfXvK0"
+      },
+      {
+        "artist": "foo",
+        "song": "foo",
+        "youtube_id": "LQaehcfXvK0"
+      },
+      {
+        "artist": "bar",
+        "song": "bar",
+        "youtube_id": "LQaehcfXvK0"
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "songs": [
+      {
+        "artist": "Moody Blues",
+        "song": "Tuesday Afternoon",
+        "youtube_id": "bPLWBhNW3FM"
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "text": "Finally!! It's FRIDAY. Here is - the one and only - ",
+    "songs": [
+      {
+        "artist": "Rebecca Black",
+        "song": "Friday",
+        "youtube_id": "kfVsfOSbJY0"
+      }
+    ]
+  }
+]
