@@ -11,7 +11,7 @@ const App = () => {
   const tooltipRef = useRef(null);
   const iframeRef = useRef(null);
 
-  const dayNumber = 5; //new Date().getDay();
+  const dayNumber = 1; //new Date().getDay();
   document.body.classList.add(`day${dayNumber}`);
   const dayData = data.find(day => day.daynumber === dayNumber);
 
@@ -44,7 +44,7 @@ const App = () => {
   if (currentVideo === null) return null;
 
   const handleTooltipPosition = (e) => {
-    if (showTooltip) {
+    if (showTooltip && dayNumber === 5) {
       tooltipRef.current.style.left = `${e.pageX-100}px`;
       tooltipRef.current.style.top = `${e.pageY-35}px`;
     }
@@ -79,7 +79,7 @@ const App = () => {
           />
         </div>
       </main>
-      {showTooltip && <div ref={tooltipRef} className="tooltip">You simple do not change this song!</div>}
+      {showTooltip && dayNumber === 5 && <div ref={tooltipRef} className="tooltip">You simple do not change this song!</div>}
     </div>
   );
 }

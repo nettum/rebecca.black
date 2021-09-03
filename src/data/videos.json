@@ -8,21 +8,6 @@
         "artist": "The Bangles",
         "song": "Manic Monday",
         "youtubeid": "SsmVgoXDq2w"
-      },
-      {
-        "artist": "New Order",
-        "song": "Blue Monday",
-        "youtubeid": "LQaehcfXvK0"
-      },
-      {
-        "artist": "foo",
-        "song": "foo",
-        "youtubeid": "LQaehcfXvK0"
-      },
-      {
-        "artist": "bar",
-        "song": "bar",
-        "youtubeid": "LQaehcfXvK0"
       }
     ]
   },
