@@ -2,7 +2,7 @@
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 h1 {
@@ -12,11 +12,26 @@ h1 {
   padding: 20px 0;
 }
 
-.day6 h2 span { font-size: 10px; }
-.day0 h2 span { font-size: 14px; }
-.day1 h2 span { font-size: 18px; }
-.day2 h2 span { font-size: 24px; }
-.day4 h2 span { font-size: 28px; }
+h2 {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #E8F6EF;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+}
 .day5 h2 span {
   font-family: 'Rampart One', cursive;
   font-size: 60px;
@@ -53,3 +68,18 @@ h1 {
   overflow: hidden;
   border-radius: 20px;
 }
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+/* .day5 .tooltip {
+  opacity: 1;
+} */
