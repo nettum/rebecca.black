@@ -7,7 +7,7 @@ const App = () => {
   const [ seenVideos, setSeenVideos ] = useState([]);
   const [ currentVideo, setCurrentVideo ] = useState(null);
 
-  const dayNumber = 1; //new Date().getDay();
+  const dayNumber = 5; //new Date().getDay();
   const dayData = data.find(day => day.daynumber === dayNumber);
 
   const getRandomArrayElement = (arr) => arr[Math.floor(Math.random()*arr.length)];
@@ -41,7 +41,6 @@ const App = () => {
       <main className={`day${dayNumber}`}>
         <h2 dangerouslySetInnerHTML={{ __html: dayData.text }} />
         {dayNumber !== 5 && <p>But fear not, here is a musicvideo about {dayData.dayname}s</p>}
-        <h3>{currentVideo.artist} - {currentVideo.song}</h3>
         {dayNumber !== 5 && <button onClick={changeSong}>I don't like this song,<br />gimme another one!</button>}
         <div className="youtube-wrapper">
           <iframe
