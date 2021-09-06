@@ -57,7 +57,7 @@ const App = () => {
       </header>
       <main>
         <h2 dangerouslySetInnerHTML={{ __html: dayData.text }} />
-        {dayNumber !== 5 && <p>But fear not, here is some oldskool music about {dayData.dayname}s</p>}
+        {dayNumber !== 5 && <p>But fear not, here are some oldskool music about {dayData.dayname}s</p>}
         <button
           onClick={changeSong}
           onMouseEnter={() => setShowTooltip(true)}
