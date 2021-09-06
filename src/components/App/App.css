@@ -9,6 +9,7 @@ h1 {
   font-family: 'Rampart One', cursive;
   font-size: 34px;
   font-weight: 400;
+  margin-top: 10px;
   padding: 20px 0;
 }
 
@@ -88,6 +89,43 @@ button:hover {
   font-size: 12px;
 }
 
+.nowplaying {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.nowplaying div {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: end;
+  animation: marquee 10s linear infinite;
+  white-space:nowrap;
+}
+
+.day5 .nowplaying div {
+  animation: marquee 10s linear infinite, fridaymarquee 1s linear infinite;
+}
+
+@keyframes marquee {
+  100% { left: -100%; }
+}
+
+@keyframes fridaymarquee {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
 @media (min-width: 640px) {
   h1 {
     font-size: 68px;
@@ -97,5 +135,11 @@ button:hover {
   }
   p {
     font-size: 20px;
+  }
+  .nowplaying div {
+    animation: marquee 40s linear infinite;
+  }
+  .day5 .nowplaying div {
+    animation: marquee 10s linear infinite, fridaymarquee 1s linear infinite;
   }
 }

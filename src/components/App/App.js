@@ -8,8 +8,11 @@ const App = () => {
   const [ seenVideos, setSeenVideos ] = useState([]);
   const [ currentVideo, setCurrentVideo ] = useState(null);
   const [ showTooltip, setShowTooltip ] = useState(false);
+  const [ showCurrentlyPlaying, setShowCurrentlyPlaying ] = useState(false);
 
   const tooltipRef = useRef(null);
+  const tickerRef = useRef(null);
+  const tickerWrapper = useRef(null);
 
   const dayNumber = new Date().getDay();
   document.body.classList.add(`day${dayNumber}`);
@@ -24,11 +27,6 @@ const App = () => {
   }, [dayData]);
 
   const changeSong = () => {
-    if (dayNumber === 5) {
-      //iframeRef.current.src = `https://www.youtube.com/embed/${currentVideo.youtubeid}?autoplay=1`;
-      //return;
-    }
-
     let current = null;
     if (seenVideos.length === dayData.songs.length) {
       current = getRandomArrayElement(dayData.songs);
@@ -41,8 +39,6 @@ const App = () => {
     setCurrentVideo(current);
   };
 
-  if (currentVideo === null) return null;
-
   const handleTooltipPosition = (e) => {
     if (showTooltip && dayNumber === 5) {
       tooltipRef.current.style.left = `${e.pageX-100}px`;
@@ -51,8 +47,15 @@ const App = () => {
   };
 
   const handleStateChange = (change) => {
-    console.log(change);
+    if (change.data === 1) {
+      setShowCurrentlyPlaying(true);
+      tickerWrapper.current.style.left = `${tickerRef.current.offsetWidth}px`;
+    } else {
+      setShowCurrentlyPlaying(false);
+    }
   }
+
+  if (currentVideo === null) return null;
 
   return (
     <div className="container">
@@ -74,9 +77,18 @@ const App = () => {
           videoId={currentVideo.youtubeid}
           containerClassName="youtube-wrapper"
           onStateChange={handleStateChange}
+          opts={{
+            playerVars: {
+              autoplay: 1,
+            },
+          }}
         />
       </main>
       {showTooltip && dayNumber === 5 && <div ref={tooltipRef} className="tooltip">You simple do not change this song!</div>}
+      <div className="nowplaying">
+        {showCurrentlyPlaying && <div ref={tickerWrapper}><span ref={tickerRef}>Now playing: {currentVideo.artist} - {currentVideo.song}</span></div>}
+      </div>
+
     </div>
   );
 }
