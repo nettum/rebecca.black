@@ -7,7 +7,7 @@
 
 h1 {
   font-family: 'Rampart One', cursive;
-  font-size: 68px;
+  font-size: 34px;
   font-weight: 400;
   padding: 20px 0;
 }
@@ -15,11 +15,13 @@ h1 {
 h2 {
   font-family: 'Lobster', cursive;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
+  padding: 5px 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 14px;
+  padding: 5px 0;
 }
 
 button {
@@ -84,4 +86,16 @@ button:hover {
   color: black;
   background-color: white;
   font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 68px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
 }
