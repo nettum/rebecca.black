@@ -60,7 +60,7 @@ const App = () => {
   return (
     <div className="container">
       <header>
-        <h1>Is it friday yet?</h1>
+        <h1>Is it Friday yet?</h1>
       </header>
       <main>
         <h2 dangerouslySetInnerHTML={{ __html: dayData.text }} />
