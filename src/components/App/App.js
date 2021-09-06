@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import YouTube from 'react-youtube';
 
 import data from './../../data/videos.json';
 import './App.css';
@@ -9,7 +10,6 @@ const App = () => {
   const [ showTooltip, setShowTooltip ] = useState(false);
 
   const tooltipRef = useRef(null);
-  const iframeRef = useRef(null);
 
   const dayNumber = new Date().getDay();
   document.body.classList.add(`day${dayNumber}`);
@@ -25,8 +25,8 @@ const App = () => {
 
   const changeSong = () => {
     if (dayNumber === 5) {
-      iframeRef.current.src = `https://www.youtube.com/embed/${currentVideo.youtubeid}?autoplay=1`;
-      return;
+      //iframeRef.current.src = `https://www.youtube.com/embed/${currentVideo.youtubeid}?autoplay=1`;
+      //return;
     }
 
     let current = null;
@@ -50,6 +50,10 @@ const App = () => {
     }
   };
 
+  const handleStateChange = (change) => {
+    console.log(change);
+  }
+
   return (
     <div className="container">
       <header>
@@ -66,18 +70,11 @@ const App = () => {
         >
           I don't like this song,<br />gimme another one!
         </button>
-        <div className="youtube-wrapper">
-          <iframe
-            ref={iframeRef}
-            width="560"
-            height="315"
-            src={`https://www.youtube.com/embed/${currentVideo.youtubeid}`}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
+        <YouTube
+          videoId={currentVideo.youtubeid}
+          containerClassName="youtube-wrapper"
+          onStateChange={handleStateChange}
+        />
       </main>
       {showTooltip && dayNumber === 5 && <div ref={tooltipRef} className="tooltip">You simple do not change this song!</div>}
     </div>
