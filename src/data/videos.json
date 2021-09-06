@@ -2,24 +2,108 @@
   {
     "daynumber": 1,
     "dayname": "Monday",
-    "text": "Uh oh, only <span>Monday</span> today ☕☕☕",
+    "text": "Oh no, Monday again... ☕☕☕",
     "songs": [
       {
         "artist": "The Bangles",
         "song": "Manic Monday",
         "youtubeid": "SsmVgoXDq2w"
+      },
+      {
+        "artist": "The Mamas & the Papas",
+        "song": "Monday Monday",
+        "youtubeid": "h81Ojd3d2rY"
+      },
+      {
+        "artist": "Duran Duran",
+        "song": "New Moon On Monday",
+        "youtubeid": "m3a4OTh2Y8w"
+      },
+      {
+        "artist": "Fleetwood Mac",
+        "song": "Monday Morning",
+        "youtubeid": "8Z2E37iNV0w"
       }
     ]
   },
   {
     "daynumber": 2,
     "dayname": "Tuesday",
-    "text": "Christ, it's only <span>Tuesday</span> 😩",
+    "text": "Christ, it's only Tuesday 😩",
     "songs": [
       {
         "artist": "Moody Blues",
         "song": "Tuesday Afternoon",
         "youtubeid": "bPLWBhNW3FM"
+      },
+      {
+        "artist": "The Rolling Stones",
+        "song": "Ruby Tuesday",
+        "youtubeid": "fvp6gseKJS8"
+      },
+      {
+        "artist": "Lynyrd Skynyrd",
+        "song": "Tuesday's Gone",
+        "youtubeid": "_7p2ogicS1U"
+      },
+      {
+        "artist": "Primal Scream",
+        "song": "Gentle Tuesday",
+        "youtubeid": "7lqDIjLdg0I"
+      }
+    ]
+  },
+  {
+    "daynumber": 3,
+    "dayname": "Wednesday",
+    "text": "Wednesday, still a few days to go! 😢",
+    "songs": [
+      {
+        "artist": "Status Quo",
+        "song": "Spring, Summer And Wednesdays",
+        "youtubeid": "jc0esH5-6-U"
+      },
+      {
+        "artist": "Snarky Puppy",
+        "song": "Ready Wednesday",
+        "youtubeid": "r1SeGYrRIh0"
+      },
+      {
+        "artist": "The Wannadies",
+        "song": "Dreamy Wednesdays",
+        "youtubeid": "5GyOnrCNrRM"
+      },
+      {
+        "artist": "John Lee Hooker",
+        "song": "Wednesday Evening Blues",
+        "youtubeid": "J3IZdmvTi6o"
+      }
+    ]
+  },
+  {
+    "daynumber": 4,
+    "dayname": "Thursday",
+    "text": "We're getting there! Only one day to go! 😅",
+    "songs": [
+      {
+        "artist": "Townes Van Zandt",
+        "song": "Like A Summer Thursday",
+        "youtubeid": "sIznb1i1HFQ"
+      },
+      {
+        "artist": "Pet Shop Boys",
+        "song": "Thursday",
+        "youtubeid": "9Tg_zvDg3Xo"
+      },
+      {
+        "artist": "The Chameleons Vox",
+        "song": "Thursday's Child",
+        "youtubeid": "GEGLrY-ztYs"
+      },
+      {
+        "artist": "Giles, Giles and Fripp",
+        "song": "Thursday Morning",
+        "youtubeid": "AOt4eqtUuLM"
       }
     ]
   },
@@ -32,6 +116,60 @@
         "artist": "Rebecca Black",
         "song": "Friday",
         "youtubeid": "kfVsfOSbJY0"
+      }
+    ]
+  },
+  {
+    "daynumber": 6,
+    "dayname": "Saturday",
+    "text": "Aww man, you just missed it! 😢 (but Saturdays is pretty ok too)",
+    "songs": [
+      {
+        "artist": "Bon Jovi",
+        "song": "Someday I'll Be Saturday Night",
+        "youtubeid": "qFNZXaBcXkA"
+      },
+      {
+        "artist": "Lynyrd Skynyrd",
+        "song": "Saturday Night Special",
+        "youtubeid": "nnYtyR6i6Qo"
+      },
+      {
+        "artist": "Chicago",
+        "song": "Saturday In The Park",
+        "youtubeid": "YHPz-OcjH8s"
+      },
+      {
+        "artist": "The Jam",
+        "song": "Saturdays Kids",
+        "youtubeid": "PKtvbau5CX0"
+      }
+    ]
+  },
+  {
+    "daynumber": 7,
+    "dayname": "Sunday",
+    "text": "Sundays, am I rite? 😴😰",
+    "songs": [
+      {
+        "artist": "Queen",
+        "song": "Lazing On A Sunday Afternoon",
+        "youtubeid": "OU6EyXcFBxA"
+      },
+      {
+        "artist": "U2",
+        "song": "Sunday Bloody Sunday",
+        "youtubeid": "EM4vblG6BVQ"
+      },
+      {
+        "artist": "Scorpions",
+        "song": "Loving You Sunday Morning",
+        "youtubeid": "UJE-xT3LbkY"
+      },
+      {
+        "artist": "Blondie",
+        "song": "Sunday Girl",
+        "youtubeid": "y8bKi1ATAqc"
       }
     ]
   }

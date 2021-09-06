@@ -11,7 +11,7 @@ const App = () => {
   const tooltipRef = useRef(null);
   const iframeRef = useRef(null);
 
-  const dayNumber = 1; //new Date().getDay();
+  const dayNumber = new Date().getDay();
   document.body.classList.add(`day${dayNumber}`);
   const dayData = data.find(day => day.daynumber === dayNumber);
 
@@ -57,7 +57,7 @@ const App = () => {
       </header>
       <main>
         <h2 dangerouslySetInnerHTML={{ __html: dayData.text }} />
-        {dayNumber !== 5 && <p>But fear not, here is a musicvideo about {dayData.dayname}s</p>}
+        {dayNumber !== 5 && <p>But fear not, here is some oldskool music about {dayData.dayname}s</p>}
         <button
           onClick={changeSong}
           onMouseEnter={() => setShowTooltip(true)}
