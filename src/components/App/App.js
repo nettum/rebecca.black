@@ -84,7 +84,7 @@ const App = () => {
           }}
         />
       </main>
-      {showTooltip && dayNumber === 5 && <div ref={tooltipRef} className="tooltip">You simple do not change this song!</div>}
+      {showTooltip && dayNumber === 5 && <div ref={tooltipRef} className="tooltip">One does not simply change this song!</div>}
       <div className="nowplaying">
         {showCurrentlyPlaying && <div ref={tickerWrapper}><span ref={tickerRef}>Now playing: {currentVideo.artist} - {currentVideo.song}</span></div>}
       </div>
